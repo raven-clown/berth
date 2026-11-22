@@ -1,0 +1,54 @@
+name: Bug report
+description: Something in berth does not work as documented or as Docker does.
+labels: ["kind/bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Security problems go to private vulnerability reporting, not here. See SECURITY.md.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you ran and what you saw. Paste output in code blocks.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+      description: If Docker behaves differently, say what Docker does.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: The smallest set of commands or files that shows the problem.
+      placeholder: |
+        1. berth run ...
+        2. ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: berth version
+      description: Output of `berth --version`, or the commit you built.
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Linux
+        - Windows (WSL2)
+        - macOS
+    validations:
+      required: true
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      description: Distribution, kernel (`uname -r`), and anything unusual such as firewalld, ufw or a custom cgroup setup.

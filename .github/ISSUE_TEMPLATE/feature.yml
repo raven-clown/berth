@@ -1,0 +1,30 @@
+name: Feature request
+description: Something berth should do, or do better than Docker.
+labels: ["kind/feature", "needs-triage"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What you are trying to do and what gets in the way today.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What berth could do. A command, a berth.yml snippet or an API call helps.
+    validations:
+      required: true
+  - type: textarea
+    id: docker
+    attributes:
+      label: How Docker, Compose or Podman handle it
+      description: Leave empty if none of them do.
+  - type: checkboxes
+    id: design
+    attributes:
+      label: Design check
+      options:
+        - label: I checked docs/design.md, including the feature matrix and the non-goals.
+          required: true
