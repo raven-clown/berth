@@ -4,7 +4,7 @@ A container platform written in Rust that aims to replace Docker without changin
 
 Free and open source under Apache-2.0, with no telemetry.
 
-**Status: design in progress.** There is no code yet and nothing here works today. The design is being written in [docs/design.md](docs/design.md) and the plans will live in [docs/plans/](docs/plans/).
+**Status: design done, implementation not started.** There is no code yet and nothing here works today. The design is in [docs/design.md](docs/design.md), the plans are in [docs/plans/](docs/plans/), and the work is tracked on the [project board](https://github.com/users/raven-clown/projects/7).
 
 ## Planned scope
 
@@ -31,7 +31,7 @@ None of this is built yet. The design document lays out the phases and what each
 
 ## Contributing
 
-The project will open for issues and pull requests once the design is settled. Contribution guidelines will follow in `CONTRIBUTING.md`.
+Issues and pull requests are welcome. Start with [CONTRIBUTING.md](CONTRIBUTING.md), pick an issue labelled `good first issue` or `help wanted`, and ask questions in [Discussions](https://github.com/raven-clown/berth/discussions). Report security problems privately as described in [SECURITY.md](SECURITY.md). Everyone taking part follows the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## License
 
